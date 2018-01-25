@@ -23,14 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WageR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkl-1V-hbh">
-                                <rect key="frame" x="117" y="33" width="95" height="31"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdL-7Q-x12">
                                 <rect key="frame" x="35" y="597" width="304" height="42"/>
                                 <color key="backgroundColor" red="0.80867109325951658" green="0.84432266406030165" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,14 +31,22 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WageR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkl-1V-hbh">
+                                <rect key="frame" x="140" y="47" width="95" height="41"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xdL-7Q-x12" secondAttribute="trailing" constant="36" id="Bp4-6R-AfR"/>
                             <constraint firstItem="xdL-7Q-x12" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="F1z-TA-b6W"/>
-                            <constraint firstItem="mkl-1V-hbh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nBX-1m-jO8"/>
+                            <constraint firstItem="mkl-1V-hbh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TnB-GD-LcO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xdL-7Q-x12" secondAttribute="bottom" constant="28" id="rMe-gk-H9b"/>
-                            <constraint firstItem="mkl-1V-hbh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="yJ6-h8-Rfj"/>
+                            <constraint firstItem="mkl-1V-hbh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="wPZ-TX-Plq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
