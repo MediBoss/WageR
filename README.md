@@ -15,5 +15,6 @@ Most Colleege federal work studies get their paycheck an entire <i>week</i> afte
 * Getting more familiar with xcode 9
 * Mastering iOS fundamental Autolayout concepts : Stackviews and Constranis
 * Integretting iOS M-V-C Architecture
+* Getting more comfortable with Swift (espacially class and optionals)
 
 
