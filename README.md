@@ -1,5 +1,5 @@
 # WageR
-
+Notice : App still under construction
 
 ### Developer : Medi W. Aassumani
 ### Technology : Swift 4, Xcode9
