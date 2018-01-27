@@ -13,10 +13,25 @@ class ViewController: UIViewController {
     
                 //THE STARTING POINT
     
+    @IBOutlet weak var payrate: UITextField! // the user's payrate in dollars
+    
+    @IBOutlet weak var hoursWorked: UITextField! // the user's hours worked
+    
+    //once the calculate button is pressed...
     
     
-    //code goes here
-    
+    @IBAction func calculate(_ sender: UIButton) {
+        
+        
+        
+        guard let h = self.hoursWorked else {return}
+        guard let p = self.payrate else {return}
+        
+            //let studentPaycheck = Payroll(h,p)
+        
+        
+    }
+
     
     
     
