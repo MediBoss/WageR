@@ -29,22 +29,13 @@ struct Payroll{
     
     
     
-    
-    
-    
     //passing only the hours and payrate to the initializer
     init(_ hours : Double,_ payRate: Double){
         
-        
-                //saffely unwaraping the optionals to avoid error
-        
-            self.hours  = hours
-            self.payRate = payRate
+        self.hours  = hours
+        self.payRate = payRate
         
     }
-    
-    
-    
     
     
     ///Function to find the user's gross income
@@ -53,11 +44,7 @@ struct Payroll{
         return (self.hours * self.payRate)
     }
     
-    
-    
-    
-    
-    
+
     ///Function to find how much federal tax will be withheld from
     ///the paycheck New Jersey Based Students only
     func getFederalTax() -> Double{
@@ -66,18 +53,11 @@ struct Payroll{
     }
     
     
-    
-    
-    
-    
     ///Function to find how much state tax a student will be withheld from the paycheck
     func getStateTax() -> Double{
         
         return (self.getGrossIncome() * self.stateIncomeRate) / 100
     }
-    
-    
-    
     
     
     ///Function to find the netpay (how much money the student is putting in his/her pocket)

@@ -28,8 +28,8 @@ class ViewController: UIViewController {
       
         guard let convertHours = self.hoursWorked.text, let convertRate = self.payrate.text else {return}
         
-        let hourW = Double(convertHours) // this statement converts and stores the hourWorked
-        let payR = Double(convertRate) //this statement converts and stores the payrate
+            let hourW = Double(convertHours) // this statement converts and stores the hourWorked
+            let payR = Double(convertRate) //this statement converts and stores the payrate
         
         
         
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         
         
                     //Outputting the result
-        self.textOutput.text = "\nGross Income : $\(String(format:"%.2f",studentPayCheck.getGrossIncome()))\n\nFederal Tax : $\(String(format:"%.2f",studentPayCheck.getFederalTax()))\n\nState Tax : $\(String(format:"%.2f",studentPayCheck.getStateTax()))\n\nNet Income : $\(String(format:"%.2f",studentPayCheck.getNetIncome()))"
+                self.textOutput.text = "\nGross Income : $\(String(format:"%.2f",studentPayCheck.getGrossIncome()))\n\nFederal Tax : $\(String(format:"%.2f",studentPayCheck.getFederalTax()))\n\nState Tax : $\(String(format:"%.2f",studentPayCheck.getStateTax()))\n\nNet Income : $\(String(format:"%.2f",studentPayCheck.getNetIncome()))"
         
         
         
