@@ -30,7 +30,7 @@ class Payroll{
     
     
             //passing only the hours and payrate to the initializer
-    init(_ hours : Double, _ payRate: Double){
+    init(_ hours : Double,_ payRate: Double){
         
         
                 //saffely unwaraping the optionals to avoid error
