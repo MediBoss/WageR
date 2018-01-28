@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var payrate: UITextField! // the user's payrate in dollars
     @IBOutlet weak var hoursWorked: UITextField! // the user's hours worked
+    @IBOutlet weak var textOutput: UITextView! // The text view to output the rseults
+    
+    
     
     //once the calculate button is pressed...
     
@@ -22,8 +25,8 @@ class ViewController: UIViewController {
     @IBAction func calculate(_ sender: Any) {
 
             //Converting and Unwrapping the hour and payrate optionals
-        guard let hoursConverted : Double = Double(hoursWorked.text!) else {return}
-        guard let payrateConverted : Double = Double(payrate.text!) else {return}
+        guard let hoursConverted : Double = Double(self.hoursWorked.text!) else {return}
+        guard let payrateConverted : Double = Double(self.payrate.text!) else {return}
         
         
                 //Creating an instance of the payroll class

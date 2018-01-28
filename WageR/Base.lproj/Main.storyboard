@@ -102,6 +102,7 @@
                     </view>
                     <connections>
                         <outlet property="hoursWorked" destination="9Rt-3h-NZ7" id="a9G-dh-NfW"/>
+                        <outlet property="textOutput" destination="asd-bN-oJT" id="SX6-fb-jrT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
