@@ -47,10 +47,10 @@ struct Payroll{
     
     
     
-    ///Function to find the user's gross income in two decimal places
+    ///Function to find the user's gross income
     func getGrossIncome() -> Double{
         
-        return Double(round(1000*(self.hours * self.payRate))/1000)
+        return (self.hours * self.payRate)
     }
     
     
@@ -62,7 +62,7 @@ struct Payroll{
     ///the paycheck New Jersey Based Students only
     func getFederalTax() -> Double{
     
-        return Double(round(1000*(self.getGrossIncome() * self.federalIncomeRate))*1000) / 100
+        return (self.getGrossIncome() * self.federalIncomeRate) / 100
     }
     
     
@@ -73,7 +73,7 @@ struct Payroll{
     ///Function to find how much state tax a student will be withheld from the paycheck
     func getStateTax() -> Double{
         
-        return Double(round(1000*(self.getGrossIncome() * self.stateIncomeRate))/1000) / 100
+        return (self.getGrossIncome() * self.stateIncomeRate) / 100
     }
     
     
@@ -89,6 +89,6 @@ struct Payroll{
             totalTax = self.getStateTax() + self.getFederalTax()
         
         
-                return Double(round(1000*(self.getGrossIncome() - totalTax))/1000)//calculates the net pay
+                return (self.getGrossIncome() - totalTax)//calculates the net pay
     }
 }
