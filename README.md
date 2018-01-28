@@ -1,5 +1,5 @@
 # WageR
-Notice : App still under construction
+Notice : App still under construction / Mainly created for Saint Peter's Universty Work Studies
 
 ### Developer : Medi W. Aassumani
 ### Technology : Swift 4, Xcode9
@@ -13,8 +13,8 @@ Most Colleege federal work studies get their paycheck an entire <i>week</i> afte
 # Behind-the-scenes goals of this App :
 
 * Getting more familiar with xcode 9
-* Mastering iOS fundamental Autolayout concepts : Stackviews and Constranis
+* Mastering iOS fundamental Autolayout concepts : Stackviews and Constrains
 * Integretting iOS M-V-C Architecture
-* Getting more comfortable with Swift (espacially class and optionals)
+* Getting more comfortable with Swift (espacially structs and optionals)
 
 
