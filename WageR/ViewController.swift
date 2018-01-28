@@ -24,15 +24,21 @@ class ViewController: UIViewController {
     
     @IBAction func calculate(_ sender: Any) {
 
-            //Converting and Unwrapping the hour and payrate optionals
-        guard let hoursConverted : Double = Double(self.hoursWorked.text!) else {return}
-        guard let payrateConverted : Double = Double(self.payrate.text!) else {return}
+        //Converting and safely Unwrapping (Thanks yves :) ) the hour and payrate optionals
+      
+        guard let convertHours = self.hoursWorked.text, let convertRate = self.payrate.text else {return}
+        
+                let hourW = Double(convertHours) // this statement converts and stores the hourWorked
+                let payR = Double(convertRate) //this statement converts and stores the payrate
+        
         
         
                 //Creating an instance of the payroll class
-            var studentPayCheck = Payroll(hoursConverted,payrateConverted)
+            var studentPayCheck = Payroll(hourW,payR)
         
         
+                //Outputting the result
+        self.textOutput.text = "Gross Income : \(studentPayCheck.getGrossIncome()) \n\nFederal Income Tax : \(studentPayCheck.getFederalTax()) \n\nState Income Tax : \(studentPayCheck.getStateTax()) \n\nNet Income : "
         
         
     }
