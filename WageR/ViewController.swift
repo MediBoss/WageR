@@ -28,17 +28,17 @@ class ViewController: UIViewController {
       
         guard let convertHours = self.hoursWorked.text, let convertRate = self.payrate.text else {return}
         
-                let hourW = Double(convertHours) // this statement converts and stores the hourWorked
-                let payR = Double(convertRate) //this statement converts and stores the payrate
+        let hourW = Double(convertHours) // this statement converts and stores the hourWorked
+        let payR = Double(convertRate) //this statement converts and stores the payrate
         
         
         
                 //Creating an instance of the payroll class
-            var studentPayCheck = Payroll(hourW,payR)
+            var studentPayCheck = Payroll(hourW!,payR!)
         
         
-                //Outputting the result
-        self.textOutput.text = "Gross Income : \(studentPayCheck.getGrossIncome()) \n\nFederal Income Tax : \(studentPayCheck.getFederalTax()) \n\nState Income Tax : \(studentPayCheck.getStateTax()) \n\nNet Income : "
+                    //Outputting the result
+            self.textOutput.text = "Gross Income : \(studentPayCheck.getGrossIncome()) \n\nFederal Income Tax : \(studentPayCheck.getFederalTax()) \n\nState Income Tax : \(studentPayCheck.getStateTax()) \n\nNet Income : \(studentPayCheck.getNetIncome())"
         
         
     }
