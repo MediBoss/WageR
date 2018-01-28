@@ -1,5 +1,5 @@
 # WageR
-Notice : App still under construction
+Notice : App still under construction / Mainly created for Saint Peter's Universty Work Studies
 
 ### Developer : Medi W. Aassumani
 ### Technology : Swift 4, Xcode9
