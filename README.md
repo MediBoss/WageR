@@ -17,6 +17,7 @@ Most Colleege federal work studies get their paycheck an entire <i>week</i> afte
 * Integretting iOS M-V-C Architecture
 * Getting more comfortable with Swift (espacially structs and optionals)
 
-<img src=WageR/images/photo1>/<img>
+<img src = "images/photo1.png" > 
+<img src = "images/photo2.png">
 
 
