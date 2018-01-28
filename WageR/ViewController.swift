@@ -34,11 +34,12 @@ class ViewController: UIViewController {
         
         
                 //Creating an instance of the payroll class
-            var studentPayCheck = Payroll(hourW!,payR!)
+            let studentPayCheck = Payroll(hourW!,payR!)
         
         
                     //Outputting the result
-            self.textOutput.text = "Gross Income : \(studentPayCheck.getGrossIncome()) \n\nFederal Income Tax : \(studentPayCheck.getFederalTax()) \n\nState Income Tax : \(studentPayCheck.getStateTax()) \n\nNet Income : \(studentPayCheck.getNetIncome())"
+                self.textOutput.text = "Gross Income : \(studentPayCheck.getGrossIncome()) \n\nFederal Income Tax : \(studentPayCheck.getFederalTax()) \n\nState Income Tax : \(studentPayCheck.getStateTax()) \n\nNet Income : \(studentPayCheck.getNetIncome())"
+        
         
         
     }

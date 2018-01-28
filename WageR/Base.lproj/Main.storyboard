@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I6f-j3-vix">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,106 +9,139 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="MarkerFeltThin.ttf">
-            <string>MarkerFelt-Thin</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="Vue-9M-gTa">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WageR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="I6f-j3-vix" customClass="ViewController" customModule="WageR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1FM-xH-EZi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdL-7Q-x12" userLabel="Calculate Button">
-                                <rect key="frame" x="35" y="603" width="304" height="36"/>
-                                <color key="backgroundColor" red="0.80867109325951658" green="0.84432266406030165" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Calculate">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Tv-SG-siB"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WageR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkl-1V-hbh" userLabel="Title">
-                                <rect key="frame" x="140" y="47" width="95" height="41"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="asd-bN-oJT">
-                                <rect key="frame" x="35" y="268" width="304" height="306"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Fg0-fX-tWj" userLabel="UserInputsView">
-                                <rect key="frame" x="51" y="150" width="292.5" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BXH-7i-c8p" userLabel="MainStackView">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="4jZ-We-x6S" userLabel="payrateView">
-                                        <rect key="frame" x="0.0" y="0.0" width="292.5" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PTw-an-Jbi" userLabel="TitleView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="183.66666666666666"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PayRate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G4-hS-GmJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WageR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdR-rR-Tb0">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="183.66666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your payrate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qvv-yP-SlN">
-                                                <rect key="frame" x="113.5" y="0.0" width="179" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Ga2-TC-tU9" userLabel="hoursView">
-                                        <rect key="frame" x="0.0" y="70" width="292.5" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BqH-xD-aE5" userLabel="InputView">
+                                        <rect key="frame" x="0.0" y="183.66666666666663" width="375" height="183.33333333333337"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-mH-Q9V">
-                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qn3-wk-ZWW" userLabel="payrateView">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="91.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Payrate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKW-zv-hWV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="91.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLi-cF-ygG">
+                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="91.666666666666671"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your payrate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAG-LQ-YwE">
+                                                                <rect key="frame" x="0.0" y="24.999999999999996" width="177.33333333333334" height="41.666666666666657"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="RAG-LQ-YwE" secondAttribute="bottom" constant="25.000000000000014" id="03m-E2-Xaa"/>
+                                                            <constraint firstItem="RAG-LQ-YwE" firstAttribute="top" secondItem="CLi-cF-ygG" secondAttribute="top" constant="24.999999999999996" id="hbg-nM-hy0"/>
+                                                            <constraint firstItem="RAG-LQ-YwE" firstAttribute="leading" secondItem="CLi-cF-ygG" secondAttribute="leading" id="i7z-Up-nwS"/>
+                                                            <constraint firstAttribute="trailing" secondItem="RAG-LQ-YwE" secondAttribute="trailing" constant="10.000000000000028" id="nUP-ZH-y2d"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZET-hL-9in" userLabel="hoursView">
+                                                <rect key="frame" x="0.0" y="91.666666666666657" width="375" height="91.666666666666657"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9N-JA-JVC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="91.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9b-ca-l9D">
+                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="91.666666666666671"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFU-ZJ-EZB">
+                                                                <rect key="frame" x="0.0" y="24.999999999999996" width="177.33333333333334" height="41.666666666666657"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="yFU-ZJ-EZB" secondAttribute="bottom" constant="25" id="HtY-Hf-rMn"/>
+                                                            <constraint firstItem="yFU-ZJ-EZB" firstAttribute="top" secondItem="H9b-ca-l9D" secondAttribute="top" constant="25" id="Tjr-TK-WiZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="yFU-ZJ-EZB" secondAttribute="trailing" constant="10" id="WYd-hJ-WlQ"/>
+                                                            <constraint firstItem="yFU-ZJ-EZB" firstAttribute="leading" secondItem="H9b-ca-l9D" secondAttribute="leading" id="kav-3P-eB8"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-Xh-okd" userLabel="OuputView">
+                                        <rect key="frame" x="0.0" y="367" width="375" height="183.66666666666663"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="T6K-zV-6fX">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="183.66666666666666"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ip3-y9-5w5" userLabel="CalculateView">
+                                        <rect key="frame" x="0.0" y="550.66666666666663" width="375" height="183.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5Y-gf-5XN">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="183.33333333333334"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Rt-3h-NZ7">
-                                                <rect key="frame" x="115.5" y="0.0" width="177" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                                <state key="normal" title="Calculate">
+                                                    <color key="titleColor" red="0.047772242706401125" green="0.2041722712279741" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="calculate:" destination="I6f-j3-vix" eventType="touchUpInside" id="Ick-D3-1U4"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xdL-7Q-x12" secondAttribute="trailing" constant="36" id="Bp4-6R-AfR"/>
-                            <constraint firstItem="xdL-7Q-x12" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="F1z-TA-b6W"/>
-                            <constraint firstItem="mkl-1V-hbh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TnB-GD-LcO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xdL-7Q-x12" secondAttribute="bottom" constant="28" id="rMe-gk-H9b"/>
-                            <constraint firstItem="mkl-1V-hbh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="wPZ-TX-Plq"/>
+                            <constraint firstItem="BXH-7i-c8p" firstAttribute="leading" secondItem="oRV-km-mUf" secondAttribute="leading" id="15K-gz-hAQ"/>
+                            <constraint firstItem="oRV-km-mUf" firstAttribute="bottom" secondItem="BXH-7i-c8p" secondAttribute="bottom" id="Dee-Sw-pnq"/>
+                            <constraint firstItem="BXH-7i-c8p" firstAttribute="top" secondItem="oRV-km-mUf" secondAttribute="top" id="hbL-uv-SHg"/>
+                            <constraint firstItem="oRV-km-mUf" firstAttribute="trailing" secondItem="BXH-7i-c8p" secondAttribute="trailing" id="lF7-Do-R8Y"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="oRV-km-mUf"/>
                     </view>
                     <connections>
-                        <outlet property="hoursWorked" destination="9Rt-3h-NZ7" id="a9G-dh-NfW"/>
-                        <outlet property="payrate" destination="qvv-yP-SlN" id="DbS-Qp-SRf"/>
-                        <outlet property="textOutput" destination="asd-bN-oJT" id="SX6-fb-jrT"/>
+                        <outlet property="hoursWorked" destination="yFU-ZJ-EZB" id="bb5-3g-3bE"/>
+                        <outlet property="payrate" destination="RAG-LQ-YwE" id="Ioj-4b-6wW"/>
+                        <outlet property="textOutput" destination="T6K-zV-6fX" id="3qz-KY-aO3"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VPd-4N-L9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="770" y="134"/>
         </scene>
     </scenes>
 </document>
