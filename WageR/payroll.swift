@@ -15,10 +15,6 @@ struct Payroll{
     var hours : Double //property to store the user's hours worked(some user work for 20.5 or so hours(decimals))
     var payRate: Double //property to store the user's payrate
     
-    
-    
-    
-    
             //Federal Work Study are Exempt from FICA(medicare and social security) taxes
     
     /// the federal amount witheld on paychecks in percentage in the state of NJ ONLY
