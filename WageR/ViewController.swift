@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         
         
                     //Outputting the result
-                self.textOutput.text = "\nGross Income : $\(String(format:"%.2f",studentPayCheck.getGrossIncome()))\n\nFederal Tax : $\(String(format:"%.2f",studentPayCheck.getFederalTax()))\n\nState Tax : $\(String(format:"%.2f",studentPayCheck.getStateTax()))\n\nNet Income : $\(String(format:"%.2f",studentPayCheck.getNetIncome()))"
+                self.textOutput.text = "Gross Income : $\(String(format:"%.2f",studentPayCheck.getGrossIncome()))\n\nFederal Tax : $\(String(format:"%.2f",studentPayCheck.getFederalTax()))\n\nState Tax : $\(String(format:"%.2f",studentPayCheck.getStateTax()))\n\nNet Income : $\(String(format:"%.2f",studentPayCheck.getNetIncome()))"
         
         
         
