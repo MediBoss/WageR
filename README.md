@@ -18,6 +18,6 @@ Most Colleege federal work studies get their paycheck an entire <i>week</i> afte
 * Getting more comfortable with Swift (espacially structs and optionals)
 
 <img src = "images/photo3.jpg">
-<img src = "images/photo1.png"> <img src = "images/photo2.png">
+<img src = "images/IMG_0537.png"> 
 
 
