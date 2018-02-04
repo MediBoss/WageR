@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     
                 //THE STARTING POINT
@@ -39,19 +39,12 @@ class ViewController: UIViewController {
         
                     //Outputting the result
                 self.textOutput.text = "Gross Income : $\(String(format:"%.2f",studentPayCheck.getGrossIncome()))\n\nFederal Tax : $\(String(format:"%.2f",studentPayCheck.getFederalTax()))\n\nState Tax : $\(String(format:"%.2f",studentPayCheck.getStateTax()))\n\nNet Income : $\(String(format:"%.2f",studentPayCheck.getNetIncome()))"
-        
-        
-        
     }
-    
-
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+       self.payrate.delegate = self
+       self.hoursWorked.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,5 +52,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Dismiss keybpard when user tap on the background
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    //User clicks the return key
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        payrate.resignFirstResponder()
+        hoursWorked.resignFirstResponder()
+        
+        return (true)
+    }
+    
 }
+
 
