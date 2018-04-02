@@ -17,6 +17,6 @@ Most Colleege federal work studies get their paycheck an entire <i>week</i> afte
 * Integretting iOS M-V-C Architecture
 * Getting more comfortable with Swift (espacially structs and optionals)
 
-<img src = "images/photo3.jpg" width = 300 height = 400> <img src = "images/IMG_0537.png" width = 300 height = 400> 
+<img src = "images/photo3.jpg" width = 300 height = 500> <img src = "images/IMG_0537.png" width = 300 height = 500> 
 
 
